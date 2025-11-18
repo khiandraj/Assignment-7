@@ -1,0 +1,12 @@
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/bin/Debug/net9.0/DBConnector.deps.json
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/bin/Debug/net9.0/DBConnector.dll
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/bin/Debug/net9.0/DBConnector.pdb
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.csproj.AssemblyReference.cache
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.GeneratedMSBuildEditorConfig.editorconfig
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.AssemblyInfoInputs.cache
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.AssemblyInfo.cs
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.csproj.CoreCompileInputs.cache
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.dll
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/refint/DBConnector.dll
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.pdb
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/ref/DBConnector.dll
