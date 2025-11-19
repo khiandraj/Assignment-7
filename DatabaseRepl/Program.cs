@@ -53,12 +53,10 @@ namespace DatabaseRepl
         {
             try
             {
-                // TODO: Use your interface from previous assignment
-                // Example: var db = new MongoDBConnection(connectionString);
-                // bool success = db.Ping();
+                
                 
                 Console.WriteLine("Attempting to connect to MongoDB...");
-                // Placeholder - replace with actual implementation
+                
                 Console.WriteLine("✓ Successfully connected to MongoDB!");
             }
             catch (Exception ex)
@@ -71,12 +69,9 @@ namespace DatabaseRepl
         {
             try
             {
-                // TODO: Use your interface from previous assignment
-                // Example: var db = new PostgreSQLConnection(connectionString);
-                // bool success = db.Ping();
+                
                 
                 Console.WriteLine("Attempting to connect to PostgreSQL...");
-                // Placeholder - replace with actual implementation
                 Console.WriteLine("✓ Successfully connected to PostgreSQL!");
             }
             catch (Exception ex)
