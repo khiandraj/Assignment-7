@@ -10,3 +10,4 @@
 /Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/refint/DBConnector.dll
 /Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.pdb
 /Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/ref/DBConnector.dll
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector/obj/Debug/net9.0/DBConnector.sourcelink.json

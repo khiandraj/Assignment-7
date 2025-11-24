@@ -118,3 +118,4 @@
 /Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector.Tests/obj/Debug/net9.0/DBConnector.Tests.pdb
 /Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector.Tests/obj/Debug/net9.0/DBConnector.Tests.genruntimeconfig.cache
 /Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector.Tests/obj/Debug/net9.0/ref/DBConnector.Tests.dll
+/Users/koolkhii/Desktop/Programming/C#/Projects /Assignment7/DBConnector.Tests/obj/Debug/net9.0/DBConnector.Tests.sourcelink.json

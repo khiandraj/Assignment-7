@@ -1,82 +1,84 @@
 ﻿using System;
+using MongoDB.Driver;
+using Npgsql;
 
-namespace DatabaseRepl
+namespace DatabaseReplApp
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("=================================");
             Console.WriteLine("Database Connection REPL");
-            Console.WriteLine("========================\n");
+            Console.WriteLine("=================================\n");
 
-            while (true)
+            bool running = true;
+
+            while (running)
             {
-                Console.WriteLine("\nSelect a database:");
+                Console.WriteLine("\nSelect database type:");
                 Console.WriteLine("1. MongoDB");
                 Console.WriteLine("2. PostgreSQL");
                 Console.WriteLine("3. Exit");
-                Console.Write("\nEnter choice: ");
-                
-                string? choice = Console.ReadLine();
+                Console.Write("\nEnter choice (1-3): ");
 
-                if (choice == "3")
-                {
-                    Console.WriteLine("Goodbye!");
-                    break;
-                }
+                string choice = Console.ReadLine();
 
-                Console.Write("Enter connection string: ");
-                string? connectionString = Console.ReadLine();
-
-                if (string.IsNullOrWhiteSpace(connectionString))
+                switch (choice)
                 {
-                    Console.WriteLine("Connection string cannot be empty.");
-                    continue;
-                }
-
-                if (choice == "1")
-                {
-                    PingMongoDB(connectionString);
-                }
-                else if (choice == "2")
-                {
-                    PingPostgreSQL(connectionString);
-                }
-                else
-                {
-                    Console.WriteLine("Invalid choice. Please try again.");
+                    case "1":
+                        HandleMongoDb();
+                        break;
+                    case "2":
+                        HandlePostgreSql();
+                        break;
+                    case "3":
+                        running = false;
+                        Console.WriteLine("Goodbye!");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
                 }
             }
         }
 
-        static void PingMongoDB(string connectionString)
+        static void HandleMongoDb()
         {
+            Console.WriteLine("\n--- MongoDB Connection ---");
+            Console.Write("Enter MongoDB connection string: ");
+            string connectionString = Console.ReadLine();
+
             try
             {
-                
-                
-                Console.WriteLine("Attempting to connect to MongoDB...");
-                
-                Console.WriteLine("✓ Successfully connected to MongoDB!");
+                var mongoConnector = new MongoConnector(connectionString);
+                bool pingResult = mongoConnector.Ping();
+
+
+                Console.WriteLine("✓ SUCCESS: Connected to MongoDB!");
+                Console.WriteLine($"Response: {pingResult}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"✗ Failed to connect to MongoDB: {ex.Message}");
+                Console.WriteLine($"✗ ERROR: Failed to connect to MongoDB");
+                Console.WriteLine($"Details: {ex.Message}");
             }
         }
 
-        static void PingPostgreSQL(string connectionString)
+        static void HandlePostgreSql()
         {
             try
             {
-                
-                
-                Console.WriteLine("Attempting to connect to PostgreSQL...");
-                Console.WriteLine("✓ Successfully connected to PostgreSQL!");
+                var PostgresConnector = new PostgresConnector(connectionString);
+                bool pingResult= PostgresConnector.Ping()
             }
+            
+            
+    
             catch (Exception ex)
             {
-                Console.WriteLine($"✗ Failed to connect to PostgreSQL: {ex.Message}");
+                Console.WriteLine($"✗ ERROR: Failed to connect to PostgreSQL");
+                Console.WriteLine($"Details: {ex.Message}");
             }
         }
     }
